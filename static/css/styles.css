@@ -29,6 +29,7 @@ body {
   color: white;
   margin: 0;
   font-family: Netflix;
+  padding-bottom: 108px;
 }
 
 a {
@@ -181,15 +182,48 @@ main{
 
 }
 
-.footer{
-  border: 1px solid red;
-  position: fixed;
+.footer {
+  /*border: 1px solid red;*/
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
+  background: black;
+  padding: 1em 0 0 ;
 }
 
+.tab-list {
+  /*border: 1px solid green;*/
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  color: gray;
+  padding-bottom: 1em;
+}
 
-.tab-list{
-  border: 1px solid green;
+.tab-list a {
+  color: gray;
+}
+
+.tab-item {
+  /*border: 1px solid blue;*/
+  text-align: center;
+  font-size: .9em
+}
+
+.tab-item svg {
+  display: block;
+  /*border: 1px solid red;*/
+  margin: auto;
+}
+
+.tab-item path {
+  fill: gray;
+}
+
+.tab-item:hover :is(path, span){
+  fill: white;
+  color: white;
 }
